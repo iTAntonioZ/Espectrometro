@@ -1,0 +1,10 @@
+.venv
+
+src/__pycache__
+
+main.py
+
+/src/camera.py
+
+/src/mathc.py
+
