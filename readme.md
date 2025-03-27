@@ -88,7 +88,7 @@ pyinstaller --onefile --windowed index.py
 
 ## 📄 Licencia
 
-MIT © [Tu Nombre]
+MIT © [iTAntonioZ]
 
 ---
 
