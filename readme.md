@@ -1,6 +1,6 @@
 # 📷 Espectrómetro de Colores con Cámara
 
-![Demo del Espectrómetro](src/assets/demo.gif) <!-- Reemplaza con una imagen real de tu proyecto -->
+![Demo del Espectrómetro](src/assets/img/test.png) <!-- Reemplaza con una imagen real de tu proyecto -->
 
 Un aplicativo que analiza los colores en tiempo real utilizando la cámara de tu dispositivo, mostrando un histograma de los componentes RGB del área central de la imagen.
 
