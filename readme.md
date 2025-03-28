@@ -26,14 +26,14 @@ Un aplicativo que analiza los colores en tiempo real utilizando la cámara de tu
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/espectrometro-camara.git
-cd espectrometro-camara
+git clone https://github.com/iTAntonioZ/Espectrometro.git
+cd espectrometro
 ```
 
 2. Instala las dependencias:
 
 ```bash
-pip install -r requirements.txt
+pip install #Para instalar cada una de las dependencias
 ```
 
 ## 🏗️ Estructura del Proyecto
@@ -44,9 +44,9 @@ espectrometro-camara/
 │   ├── cam.py           # Lógica de análisis de color
 │   ├── graph.py         # Visualización del histograma
 │   ├── assets/          # Recursos gráficos
-│   └── __init__.py
+│   └── icon/            # Icono de la app
+|   ├── img/             # Recursos de la documentación
 ├── index.py             # Aplicación principal
-├── requirements.txt     # Dependencias
 └── README.md            # Este archivo
 ```
 
@@ -62,34 +62,6 @@ python index.py
 - **Cambiar cámara**: Botón para seleccionar entre cámaras disponibles
 - **Salir**: Cierra la aplicación correctamente
 
-## 🛠️ Desarrollo
-
-### Ejecutar en modo desarrollo
-
-```bash
-python -m src.cam  # Prueba el módulo de cámara directamente
-```
-
-### Construir ejecutable (opcional)
-
-```bash
-pyinstaller --onefile --windowed index.py
-```
-
-## 🤝 Contribución
-
-¡Las contribuciones son bienvenidas! Sigue estos pasos:
-
-1. Haz un fork del proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/awesome-feature`)
-3. Haz commit de tus cambios (`git commit -m 'Add some awesome feature'`)
-4. Haz push a la rama (`git push origin feature/awesome-feature`)
-5. Abre un Pull Request
-
 ## 📄 Licencia
 
-MIT © [iTAntonioZ]
-
----
-
-Hecho con ❤️ y Python 🐍
+De uso libre, la base del programa fue escrito por @iTAntonioZ
