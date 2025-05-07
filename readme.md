@@ -33,7 +33,7 @@ cd espectrometro
 2. Instala las dependencias:
 
 ```bash
-pip install #Para instalar cada una de las dependencias
+pip install module.txt #Para instalar cada una de las dependencias
 ```
 
 ## 🏗️ Estructura del Proyecto

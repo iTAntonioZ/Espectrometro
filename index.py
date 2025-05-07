@@ -18,14 +18,14 @@ class SpectrometerApp:
         
     def _setup_window(self):
         """Configura la ventana principal"""
-        self.root.title("Espectrómetro con cámara | Power by  iTzAntonioZ")
+        self.root.title("Espectrómetro con cámara | Realizado por iTAntonioZ")
         self.root.geometry("1000x700")
         self.root.grid_rowconfigure(0, weight=1)
         self.root.grid_columnconfigure(0, weight=1)
         self.root.grid_columnconfigure(1, weight=1)
         
         try:
-            icon_image = Image.open("src/assets/icon/img.jpeg")
+            icon_image = Image.open("src/assets/icon/img2.png")
             self.root.iconphoto(True, ImageTk.PhotoImage(icon_image))
         except Exception as e:
             print(f"No se pudo cargar el icono: {e}")
@@ -95,7 +95,10 @@ class SpectrometerApp:
             return
 
         while self.running:
-            ret, frame = self.cap.read()
+            ret, frame = self.cap.read() #se rompe los frames en 2 partes
+            if frame is None:
+                print("No se pudo leer el frame.")
+                break
             if not ret:
                 continue
 
@@ -181,11 +184,12 @@ class SpectrometerApp:
     def _get_available_cameras(self):
         """Devuelve las cámaras disponibles"""
         cameras = []
-        for i in range(3):  # Probamos hasta 3 cámaras
+        for i in range(3): 
             cap = cv2.VideoCapture(i)
             if cap.isOpened():
                 cameras.append(f"Cámara {i}")
                 cap.release()
+                
         return cameras
 
     def _create_camera_selection_window(self, cameras):
